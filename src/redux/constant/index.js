@@ -1,0 +1,2 @@
+export const SET_REGIONS = "SET_REGIONS"
+export const SET_COUNTRIES = "SET_COUNTRIES"
