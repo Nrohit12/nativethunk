@@ -18,6 +18,10 @@ function Countries({navigation, route}) {
   const dispatch = useDispatch();
   const region = route.params.region;
 
+  useEffect(() => {
+    dispatch(setCountries(region.region))
+  }, [dispatch]);
+
   const renderCountry = ({item, index}) => {
     return (
       <TouchableOpacity

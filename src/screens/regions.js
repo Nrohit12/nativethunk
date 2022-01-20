@@ -25,7 +25,6 @@ function Regions({navigation}) {
     return (
       <TouchableOpacity
         onPress={() => {
-          dispatch(setCountries(item.region));
           navigation.navigate('Countries', {region: item});
         }}
         style={[styles.regions, {backgroundColor: item.color}]}>
